@@ -1,4 +1,4 @@
-package com.example.mifta.case1_1202150069;
+package com.example.mifta.Miftah_1202150069_Modul1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

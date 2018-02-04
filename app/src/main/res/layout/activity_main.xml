@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mifta.case1_1202150069.MainActivity">
+    tools:context="com.example.mifta.Miftah_1202150069_Modul1.MainActivity">
 
     <LinearLayout
         android:layout_width="372dp"
@@ -63,7 +63,10 @@
                 android:layout_weight="1"
                 android:text="Abnormal"
                 tools:layout_editor_absoluteX="225dp"
-                tools:layout_editor_absoluteY="322dp" />
+                tools:layout_editor_absoluteY="322dp"
+                android:onClick="abnormal"
+                />
+
 
             <Button
                 android:id="@+id/eatboss"
@@ -72,7 +75,10 @@
                 android:layout_weight="1"
                 android:text="Eatbus"
                 tools:layout_editor_absoluteX="53dp"
-                tools:layout_editor_absoluteY="322dp" />
+                tools:layout_editor_absoluteY="322dp"
+                android:onClick="eatbus"
+                />
+
         </LinearLayout>
 
     </LinearLayout>
