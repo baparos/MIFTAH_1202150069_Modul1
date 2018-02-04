@@ -6,50 +6,63 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //    Deklarasi variabel;
     Button Abnormal, Eatbus;
     EditText makanan, porsi;
+    String food,amount;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//  Mencari berdasarkan id
+//  cari id
         Abnormal = (Button)findViewById(R.id.abnormal);
         Eatbus = (Button)findViewById(R.id.eatboss);
         makanan = (EditText)findViewById(R.id.makanan);
         porsi = (EditText)findViewById(R.id.porsi1);
+        food= makanan.getText().toString();
+        amount=porsi.getText().toString();
 
-//  untuk Abnormal
-        Abnormal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this,SecondActivty.class);
-                String tempat = Abnormal.getText().toString();
-                pindah.putExtra("makanan", makanan.getText().toString());
-                pindah.putExtra("tempat", tempat);
-                pindah.putExtra("porsi", porsi.getText().toString());
-                startActivity(pindah);
 
-            }
-        });
 
-        //untuk eatbus
-        Eatbus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this,SecondActivty.class);
-                String tempat = Eatbus.getText().toString();
-                pindah.putExtra("makanan", makanan.getText().toString());
+    }
+    public void abnormal(View view){
+        Intent intent =new Intent(this, SecondActivty.class);
 
-                pindah.putExtra("tempat", tempat);
-                pindah.putExtra("porsi", porsi.getText().toString());
-                startActivity(pindah);
-            }
-        });
+        food = makanan.getText().toString();
+        amount = porsi.getText().toString();
+        String tempat = Abnormal.getText().toString();
+
+        if (food.isEmpty()||amount.isEmpty()){
+            Toast.makeText(this, "Isi menu dan porsi dulu gan!", Toast.LENGTH_SHORT).show();
+        }else{
+            intent.putExtra("makanan",food);
+            intent.putExtra("porsi",amount);
+            intent.putExtra("tempat",tempat);
+            startActivity(intent);
+        }
+
+    }
+    public void eatbus(View view){
+        Intent intent =new Intent(this, SecondActivty.class);
+
+        food = makanan.getText().toString();
+        amount = porsi.getText().toString();
+        String tempat = Eatbus.getText().toString();
+
+        if (food.isEmpty()||amount.isEmpty()){
+            Toast.makeText(this, "Isi menu dan porsi dulu gan!", Toast.LENGTH_SHORT).show();
+        }else{
+            intent.putExtra("makanan",food);
+            intent.putExtra("porsi",amount);
+            intent.putExtra("tempat",tempat);
+            startActivity(intent);
+        }
+
     }
 }
 /*
