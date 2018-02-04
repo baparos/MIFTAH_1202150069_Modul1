@@ -1,0 +1,85 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.mifta.case1_1202150069.MainActivity">
+
+        <LinearLayout
+            android:layout_width="376dp"
+            android:layout_height="502dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Makan Malam"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="35dp" />
+
+            <TextView
+                android:id="@+id/resto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="153dp" />
+
+            <TextView
+                android:id="@+id/makanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="182dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteY="351dp" />
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porsi"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="260dp" />
+
+            <TextView
+                android:id="@+id/porsi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="296dp" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
